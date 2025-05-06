@@ -53,7 +53,8 @@ The door drive is automatically added to Home Assistant via [MQTT Discovery](htt
     * Short `JP1` (Boot mode)
     * Power up board. If board was powered before reset `esp8266` by shorting `JP2`(Reset) for a short time
 1. Flashing `pic16`
-    * Use any Microchip programmer (PICkit3, ICD3, ...)
+    * Get a Microchip programmer which supports the pic16 (PICkit3, ICD3, ...)
+    * Connect the programmer to `SV1`
     * Open MPLabX and click on File -> Open Project
     * Select `pic16` subfolder (chip icon)
     * Click Clean an Build Main Project
@@ -69,8 +70,9 @@ The door drive is automatically added to Home Assistant via [MQTT Discovery](htt
 * USB-UART converter
 
 ## PIC16
-* MPLabX v5.25
-* XC8 v2.10
+* MPLabX v5.45
+* Device Family Pack PIC16F1xxxx_DFP 1.5.133
+* XC8 v2.32
 * PICkit3
 
 
